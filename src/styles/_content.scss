@@ -1,0 +1,73 @@
+.content {
+  display: flex;
+  height: 100vh;
+  color: #314360;
+  
+  @media (max-height: $media-xs) {
+    padding-top: 130px;
+    height: auto;
+  }
+}
+
+.content__left {
+  position: relative;
+  width: 52%;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 75%;
+    height: 75%;
+    background: url("../img/main-man-1.png") no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  @media (max-width: $media-xxl) {
+    display: none;
+  }
+}
+
+.content__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  
+  @media (min-width: $media-xxxl) {
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: $media-xxl) {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.content__title {
+  margin-bottom: 45px;
+  font-size: 44px;
+
+  @media (max-width: $media-lg) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $media-md) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $media-sm) {
+    font-size: 24px;
+  }
+}
+
+.content__run {
+  margin-top: 35px;
+}
+
+/* Online */
+@import "online";

@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 15px;
+  z-index: 2;
+}
+
+.header__brand {
+  @media (max-width: $media-xl) {
+    width: 100%;
+  }
+}
+
+.header__logo {
+  width: 270px;
+  max-width: 100%;
+
+  @media (max-width: $media-xs) {
+    width: 50%;
+  }
+}

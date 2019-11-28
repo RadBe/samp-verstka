@@ -1,0 +1,38 @@
+@import "fonts";
+
+* {
+  &,
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-size: 16px;
+  background: #000 url("../img/bg-long.jpg") no-repeat;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@import "variables";
+
+/* Btn */
+@import "btn";
+
+/* Header */
+@import "header";
+
+/* Nav */
+@import "nav";
+
+/* Content */
+@import "content";
+
+/* Servers */
+@import "servers";
